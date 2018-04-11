@@ -46,13 +46,11 @@ int main(int argc, const char * argv[]) {
     
     permutations(0, input, container);
     
-    int counter = 0;
     for (auto&& arr : container) {
-        counter++;
         printIntArray(arr);
     }
     
-    std::cout << "Total process times: " << counter << std::endl;
+    std::cout << "Permutatoins count: " << container.size() << std::endl;
     
     return 0;
 }
